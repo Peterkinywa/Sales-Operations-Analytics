@@ -49,6 +49,23 @@ Missing values were handled using Excel formulas in the staging table. Blank Cit
 
 <img width="1437" height="197" alt="image" src="https://github.com/user-attachments/assets/5b84cbcb-c6a0-434d-ae9c-43c6f5b145de" />
 
+### Date validation
+Rule: RequiredDate ≥ OrderDate. If RequiredDate < OrderDate, it was reset to OrderDate + 15 days.
+
+RequiredDate values earlier than OrderDate were identified as data errors. To correct these, RequiredDate was reset to OrderDate plus 15 days. The 15-day adjustment was derived from the average lead time calculated across all valid records, making the correction data-driven rather than assuming. LeadTimeDays was then computed using the corrected RequiredDate. This ensured consistency with observed operational performance.
+
+<img width="1759" height="297" alt="image" src="https://github.com/user-attachments/assets/f55998b8-64a6-4bdf-bb95-3af768b741e4" />
+
+<img width="1865" height="261" alt="image" src="https://github.com/user-attachments/assets/9a5e0de4-200f-45ed-ae16-a23c8b880dcf" />
+
+<img width="1892" height="315" alt="image" src="https://github.com/user-attachments/assets/118ae7f4-cdf8-4fa5-baa6-36c7c7d1bcee" />
+
+<img width="1767" height="226" alt="image" src="https://github.com/user-attachments/assets/8836b28c-e2b0-4733-a719-b8635c49c3ac" />
+
+
+
+
+
 
 
 
