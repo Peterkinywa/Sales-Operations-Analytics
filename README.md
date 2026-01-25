@@ -46,11 +46,7 @@ RequiredDate values earlier than OrderDate were identified as data errors. To co
 
 <img width="1837" height="297" alt="image" src="https://github.com/user-attachments/assets/d32df47f-249b-4cc2-95fe-882359a2bdc2" />
 
-<img width="1865" height="261" alt="image" src="https://github.com/user-attachments/assets/9a5e0de4-200f-45ed-ae16-a23c8b880dcf" />
-
-<img width="1892" height="315" alt="image" src="https://github.com/user-attachments/assets/118ae7f4-cdf8-4fa5-baa6-36c7c7d1bcee" />
-
-<img width="1767" height="226" alt="image" src="https://github.com/user-attachments/assets/8836b28c-e2b0-4733-a719-b8635c49c3ac" />
+<img width="1824" height="245" alt="image" src="https://github.com/user-attachments/assets/aa3d976e-4d88-4e7a-b4e4-552b864d9f0e" />
 
 ## Calculated metrics
 | Metric       | Formula in excel                                                     |
