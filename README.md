@@ -22,4 +22,15 @@ A dedicated staging sheet was created to preserve raw data integrity and apply a
 <img width="1325" height="388" alt="image" src="https://github.com/user-attachments/assets/c714c307-9832-4a76-b137-f19f2d0e64fb" />
 
 ### Missing value handling
+Missing values were handled using Excel formulas in the staging table. Blank City and Channel fields were replaced with "Unknown" while missing Salesperson values were replaced with "Unassigned". This ensured no records were excluded from analysis while preserving transparency of data quality issues.
+
+<img width="1421" height="237" alt="image" src="https://github.com/user-attachments/assets/e08b013c-e9a6-44d6-9c33-c00da424f2cb" />
+
+<img width="1679" height="255" alt="image" src="https://github.com/user-attachments/assets/5e224a93-bb66-4afa-80b7-fa66d0b70f9a" />
+
+<img width="1559" height="254" alt="image" src="https://github.com/user-attachments/assets/2438f206-0304-4f1b-a5a1-9180e5192b9e" />
+
+
+
+
 
