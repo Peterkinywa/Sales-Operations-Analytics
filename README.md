@@ -70,6 +70,9 @@ RequiredDate values earlier than OrderDate were identified as data errors. To co
 | GrossProfit  | `GrossRevenue − CostOfGoods`, `=P2-Q2`                               |
 | MarginPct    | `IF(GrossRevenue=0,0,GrossProfit/GrossRevenue)`, `=IF(R2=0,0,R2/P2)` |
 
+<img width="1650" height="221" alt="image" src="https://github.com/user-attachments/assets/862a6b95-f1e3-4d5c-9a67-b3edf4a70ca8" />
+
+
 
 
 
