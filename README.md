@@ -6,12 +6,11 @@ This project analyzes sales operations data for a multi-regional electronics dis
 A dedicated staging sheet was created to preserve raw data integrity and apply all cleaning logic.
 
 ### Duplicate removal
-- Criteria used - OrderID should be unique.
-- Rule - Rows with duplicate OrderID values were considered exact duplicates and removed using Remove Duplicates on Excel. 
+- Criteria used - Selected all data (ctrl+A), clicked Remove Duplicates, selected all columns and hit OK
 
-<img width="1312" height="455" alt="image" src="https://github.com/user-attachments/assets/e6c42c0b-1e00-4ccf-aa2e-4bb0b421f7b0" />
+<img width="1313" height="398" alt="image" src="https://github.com/user-attachments/assets/172399f5-78ce-4ebe-b31a-89c259bee0ae" />
 
-<img width="1312" height="420" alt="image" src="https://github.com/user-attachments/assets/a3a46c2d-82f0-4e00-b9d5-f760b4f21b26" />
+<img width="1315" height="324" alt="image" src="https://github.com/user-attachments/assets/331c3615-50ef-41b2-95cd-25c6833913c1" />
 
 ### Data type fixes
 - Date fields (OrderDate, RequiredDate) converted to Date format
