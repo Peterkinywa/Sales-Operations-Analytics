@@ -26,7 +26,8 @@ Missing values were handled using Excel formulas in the staging table. Blank Cit
 
 `=IF(OR(F2=" ", ISBLANK(F2)), "Unknown", F2)
 =IF(OR(H2=" ", ISBLANK(H2)), "Unknown", H2)
-=IF(OR(I2=" ", ISBLANK(I2)), "Unassigned", I2)`
+=IF(OR(I2=" ", ISBLANK(I2)), "Unassigned", I2)
+`
 
 <img width="1421" height="237" alt="image" src="https://github.com/user-attachments/assets/e08b013c-e9a6-44d6-9c33-c00da424f2cb" />
 
