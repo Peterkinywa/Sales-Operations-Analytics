@@ -44,7 +44,7 @@ Rule: RequiredDate ≥ OrderDate. If RequiredDate < OrderDate, it was reset to O
 
 RequiredDate values earlier than OrderDate were identified as data errors. To correct these, RequiredDate was reset to OrderDate plus 7 days. LeadTimeDays was then computed using the corrected RequiredDate. This ensured consistency with observed operational performance.
 
-<img width="1759" height="297" alt="image" src="https://github.com/user-attachments/assets/f55998b8-64a6-4bdf-bb95-3af768b741e4" />
+<img width="1841" height="282" alt="image" src="https://github.com/user-attachments/assets/b3cb7cb3-0f34-452d-a227-8c27d391f710" />
 
 <img width="1865" height="261" alt="image" src="https://github.com/user-attachments/assets/9a5e0de4-200f-45ed-ae16-a23c8b880dcf" />
 
