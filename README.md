@@ -24,6 +24,8 @@ A dedicated staging sheet was created to preserve raw data integrity and apply a
 ### Missing value handling
 Missing values were handled using Excel formulas in the staging table. Blank City and Channel fields were replaced with "Unknown" while missing Salesperson values were replaced with "Unassigned". This ensured no records were excluded from analysis while preserving transparency of data quality issues.
 
+`=IF(OR(F2=" ", ISBLANK(F2)), "Unknown", F2)`
+
 <img width="1421" height="237" alt="image" src="https://github.com/user-attachments/assets/e08b013c-e9a6-44d6-9c33-c00da424f2cb" />
 
 <img width="1679" height="255" alt="image" src="https://github.com/user-attachments/assets/5e224a93-bb66-4afa-80b7-fa66d0b70f9a" />
