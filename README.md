@@ -39,9 +39,9 @@ Missing values were handled using Excel formulas in the staging table. Blank Cit
 ### Flagging and correcting suspicious values
 - UnitPrice (negative prices) - All negative prices were converted to their absolute values (-30.66 converted to 30.66)
   
-  <img width="1503" height="160" alt="image" src="https://github.com/user-attachments/assets/7ad60782-b610-4db4-949d-4a4a2b1dc297" />
+<img width="1503" height="160" alt="image" src="https://github.com/user-attachments/assets/7ad60782-b610-4db4-949d-4a4a2b1dc297" />
 
-  <img width="1501" height="125" alt="image" src="https://github.com/user-attachments/assets/bf903d48-4700-4e6b-b9f5-99505335fe72" />
+<img width="1501" height="125" alt="image" src="https://github.com/user-attachments/assets/bf903d48-4700-4e6b-b9f5-99505335fe72" />
 
 - Discounts (>30%) - Discount percentages exceeding 30% were capped at 30% using Excel formulas.
 
