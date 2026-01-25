@@ -62,7 +62,13 @@ RequiredDate values earlier than OrderDate were identified as data errors. To co
 
 <img width="1767" height="226" alt="image" src="https://github.com/user-attachments/assets/8836b28c-e2b0-4733-a719-b8635c49c3ac" />
 
-
+## Calculated metrics
+| Metric       | Formula in excel                                                     |
+| ------------ | -------------------------------------------------------------------- |
+| GrossRevenue | `UnitPrice × Quantity × (1 − DiscountPct)`, `=M2*O2*(1-N2)`          |
+| CostOfGoods  | `UnitCost × Quantity`, `=L2*O2`                                      |
+| GrossProfit  | `GrossRevenue − CostOfGoods`, `=P2-Q2`                               |
+| MarginPct    | `IF(GrossRevenue=0,0,GrossProfit/GrossRevenue)`, `=IF(R2=0,0,R2/P2)` |
 
 
 
