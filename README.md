@@ -36,7 +36,13 @@ Missing values were handled using Excel formulas in the staging table. Blank Cit
 
 <img width="1559" height="254" alt="image" src="https://github.com/user-attachments/assets/2438f206-0304-4f1b-a5a1-9180e5192b9e" />
 
+### Flagging and correcting suspicious values
+- UnitPrice (negative prices)
+  
+  <img width="1503" height="160" alt="image" src="https://github.com/user-attachments/assets/7ad60782-b610-4db4-949d-4a4a2b1dc297" />
 
+- Discounts (>30%)
+  
 
 
 
