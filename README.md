@@ -59,15 +59,15 @@ RequiredDate values earlier than OrderDate were identified as data errors. To co
 <img width="1609" height="327" alt="image" src="https://github.com/user-attachments/assets/3626f94d-68a0-40d1-871a-1c94958dc2d7" />
 
 ## Create standardized dimensions
-- Month (MMM-YYYY) from OrderDate
-- 
+- Month (MMM-YYYY) from OrderDate - `=TEXT(B2,"MMM-YYYY")`
+
 <img width="1629" height="256" alt="image" src="https://github.com/user-attachments/assets/38b57e7c-1356-418b-8b95-317f53ba0905" />
 
-- Quarter (e.g., Q1-2024)
+- Quarter (e.g., Q1-2024) - `="Q"&ROUNDUP(MONTH(B2)/3,0)&"-"&YEAR(B2)`
 
 <img width="1694" height="256" alt="image" src="https://github.com/user-attachments/assets/51a4935a-d0d0-4e41-8d2c-5833eeb24a39" />
 
-- PriceBand
+- PriceBand - 
 
 
 
