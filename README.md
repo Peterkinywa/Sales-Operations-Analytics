@@ -33,20 +33,16 @@ Missing values were handled using Excel formulas in the staging table. Blank Cit
 ### Flagging and correcting suspicious values
 - UnitPrice (negative prices) - All negative prices were converted to their absolute values (-30.66 converted to 30.66)
   
-<img width="1503" height="160" alt="image" src="https://github.com/user-attachments/assets/7ad60782-b610-4db4-949d-4a4a2b1dc297" />
-
-<img width="1501" height="125" alt="image" src="https://github.com/user-attachments/assets/bf903d48-4700-4e6b-b9f5-99505335fe72" />
+<img width="1417" height="124" alt="image" src="https://github.com/user-attachments/assets/fcdc9d9c-c903-44e2-aa5d-ffe93fa3d057" />
 
 - Discounts (>30%) - Discount percentages exceeding 30% were capped at 30% using Excel formulas.
 
-<img width="1433" height="238" alt="image" src="https://github.com/user-attachments/assets/0d596654-1cd1-4c9c-ae3e-bddab39157db" />
-
-<img width="1437" height="197" alt="image" src="https://github.com/user-attachments/assets/5b84cbcb-c6a0-434d-ae9c-43c6f5b145de" />
+<img width="1530" height="186" alt="image" src="https://github.com/user-attachments/assets/5b71aebd-fff2-4172-851a-58734877f2d7" />
 
 ### Date validation
-Rule: RequiredDate ≥ OrderDate. If RequiredDate < OrderDate, it was reset to OrderDate + 15 days.
+Rule: RequiredDate ≥ OrderDate. If RequiredDate < OrderDate, it was reset to OrderDate + 7 days.
 
-RequiredDate values earlier than OrderDate were identified as data errors. To correct these, RequiredDate was reset to OrderDate plus 15 days. The 15-day adjustment was derived from the average lead time calculated across all valid records, making the correction data-driven rather than assuming. LeadTimeDays was then computed using the corrected RequiredDate. This ensured consistency with observed operational performance.
+RequiredDate values earlier than OrderDate were identified as data errors. To correct these, RequiredDate was reset to OrderDate plus 7 days. LeadTimeDays was then computed using the corrected RequiredDate. This ensured consistency with observed operational performance.
 
 <img width="1759" height="297" alt="image" src="https://github.com/user-attachments/assets/f55998b8-64a6-4bdf-bb95-3af768b741e4" />
 
