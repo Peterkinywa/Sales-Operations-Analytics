@@ -22,19 +22,13 @@ A dedicated staging sheet was created to preserve raw data integrity and apply a
 <img width="1325" height="388" alt="image" src="https://github.com/user-attachments/assets/c714c307-9832-4a76-b137-f19f2d0e64fb" />
 
 ### Missing value handling
-Missing values were handled using Excel formulas in the staging table. Blank City and Channel fields were replaced with "Unknown" while missing Salesperson values were replaced with "Unassigned". This ensured no records were excluded from analysis while preserving transparency of data quality issues.
+Missing values were handled using Excel formulas in the staging table. Blank City field were replaced with "Unknown", Channel fields were replaced with "Unspecified" while missing Salesperson values were replaced with "Unassigned". This ensured no records were excluded from analysis while preserving transparency of data quality issues.
 
-`=IF(OR(F2=" ", ISBLANK(F2)), "Unknown", F2)`
+<img width="1316" height="210" alt="image" src="https://github.com/user-attachments/assets/d70b0f2d-7ee3-439a-a4ae-1d192548c5e1" />
 
-`=IF(OR(H2=" ", ISBLANK(H2)), "Unknown", H2)`
+<img width="1317" height="199" alt="image" src="https://github.com/user-attachments/assets/989ea60b-7894-4b8f-b42a-2f719f0b418c" />
 
-`=IF(OR(I2=" ", ISBLANK(I2)), "Unassigned", I2)`
-
-<img width="1421" height="237" alt="image" src="https://github.com/user-attachments/assets/e08b013c-e9a6-44d6-9c33-c00da424f2cb" />
-
-<img width="1740" height="252" alt="image" src="https://github.com/user-attachments/assets/b1eaf210-f83f-43d5-b4da-0537a415eae4" />
-
-<img width="1559" height="254" alt="image" src="https://github.com/user-attachments/assets/2438f206-0304-4f1b-a5a1-9180e5192b9e" />
+<img width="1314" height="209" alt="image" src="https://github.com/user-attachments/assets/5c842c0f-fc7c-4b3d-b104-f821daa51710" />
 
 ### Flagging and correcting suspicious values
 - UnitPrice (negative prices) - All negative prices were converted to their absolute values (-30.66 converted to 30.66)
