@@ -32,7 +32,7 @@ Missing values were handled using Excel formulas in the staging table. Blank Cit
 
 <img width="1421" height="237" alt="image" src="https://github.com/user-attachments/assets/e08b013c-e9a6-44d6-9c33-c00da424f2cb" />
 
-<img width="1550" height="255" alt="image" src="https://github.com/user-attachments/assets/21452ee0-089a-431f-b10a-c5fd26d3ba99" />
+<img width="1740" height="252" alt="image" src="https://github.com/user-attachments/assets/b1eaf210-f83f-43d5-b4da-0537a415eae4" />
 
 <img width="1559" height="254" alt="image" src="https://github.com/user-attachments/assets/2438f206-0304-4f1b-a5a1-9180e5192b9e" />
 
