@@ -6,7 +6,7 @@ This project analyzes sales operations data for a multi-regional electronics dis
 A dedicated staging sheet was created to preserve raw data integrity and apply all cleaning logic.
 
 ### Duplicate removal
-- Criteria used - OrderID
+- Criteria used - OrderID should be unique.
 - Rule - Rows with duplicate OrderID values were considered exact duplicates and removed using Remove Duplicates on Excel. 
 
 <img width="1312" height="455" alt="image" src="https://github.com/user-attachments/assets/e6c42c0b-1e00-4ccf-aa2e-4bb0b421f7b0" />
