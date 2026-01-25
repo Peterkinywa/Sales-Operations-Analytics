@@ -58,6 +58,11 @@ RequiredDate values earlier than OrderDate were identified as data errors. To co
 
 <img width="1609" height="327" alt="image" src="https://github.com/user-attachments/assets/3626f94d-68a0-40d1-871a-1c94958dc2d7" />
 
+## Create standardized dimensions
+
+<img width="1862" height="375" alt="image" src="https://github.com/user-attachments/assets/0b8e166c-7e31-43fa-9af1-ebb795153e4c" />
+
+
 
 
 
