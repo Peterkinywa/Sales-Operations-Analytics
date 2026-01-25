@@ -45,9 +45,12 @@ Missing values were handled using Excel formulas in the staging table. Blank Cit
 
 - Discounts (>30%) - Discount percentages exceeding 30% were capped at 30% using Excel formulas.
 
-<img width="1438" height="232" alt="image" src="https://github.com/user-attachments/assets/8c9687e8-b855-4726-ab52-ad6e35d909f3" />
+<img width="1433" height="238" alt="image" src="https://github.com/user-attachments/assets/0d596654-1cd1-4c9c-ae3e-bddab39157db" />
 
-<img width="1437" height="199" alt="image" src="https://github.com/user-attachments/assets/29e75dfa-5fb6-4cf0-914b-add937219ed2" />
+<img width="1437" height="197" alt="image" src="https://github.com/user-attachments/assets/5b84cbcb-c6a0-434d-ae9c-43c6f5b145de" />
+
+
+
 
 
 
