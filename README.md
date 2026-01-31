@@ -27,12 +27,14 @@ RequiredDate values earlier than OrderDate were identified as data errors. To co
 ## Calculated metrics
 | Metric       | Formula in excel                                                       |
 | ------------ | -----------------------------------------------------------------------|
-| GrossRevenue | `UnitPrice × Quantity × (1 − DiscountPct)`, `=N2*Q2*(1-P2)`            |
-| CostOfGoods  | `UnitCost × Quantity`, `=L2*Q2`                                        |
-| GrossProfit  | `GrossRevenue − CostOfGoods`, `=U2-V2`                                 |
-| MarginPct    | `IF(GrossRevenue=0,0,GrossProfit/GrossRevenue)`, `=IF(U2=0, 0, W2/U2)` |
+| GrossRevenue | `UnitPrice × Quantity × (1 − DiscountPct)`, `=N2*P2*(1-Q2)`            |
+| CostOfGoods  | `UnitCost × Quantity`, `=L2*R2`                                        |
+| GrossProfit  | `GrossRevenue − CostOfGoods`, `=V2-W2`                                 |
+| MarginPct    | `IF(GrossRevenue=0,0,GrossProfit/GrossRevenue)`, `=IF(V2=0, 0, X2/V2)` |
 
 ## Create standardized dimensions
-- Month (MMM-YYYY) from OrderDate - `=TEXT(B2,"MMM-YYYY")`
+- Month (MMM-YYYY) from OrderDate - As shown in the below excel snip
+<img width="1357" height="553" alt="image" src="https://github.com/user-attachments/assets/5736c10d-4b24-4421-a7db-c9c064f369f9" />
 - Quarter (e.g., Q1-2024) - `="Q"&ROUNDUP(MONTH(B2)/3,0)&"-"&YEAR(B2)`
-- PriceBand - 
+- PriceBand - `=IF(N2<=QUARTILE(N2:N632,1), "Low", IF(N2<=QUARTILE(N2:N632,2),"Middle", "High"))`
+
