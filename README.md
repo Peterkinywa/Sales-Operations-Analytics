@@ -34,7 +34,10 @@ RequiredDate values earlier than OrderDate were identified as data errors. To co
 
 ## Create standardized dimensions
 - Month (MMM-YYYY) from OrderDate - As shown in the below excel snip
+  
 <img width="1357" height="553" alt="image" src="https://github.com/user-attachments/assets/5736c10d-4b24-4421-a7db-c9c064f369f9" />
+
 - Quarter (e.g., Q1-2024) - `="Q"&ROUNDUP(MONTH(B2)/3,0)&"-"&YEAR(B2)`
+
 - PriceBand - `=IF(N2<=QUARTILE(N2:N632,1),"Low",IF(N2<=QUARTILE(N2:N632,2),"Middle","High"))`
 
