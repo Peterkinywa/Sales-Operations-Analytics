@@ -16,7 +16,7 @@ A dedicated staging sheet was created to preserve raw data integrity and apply a
 Missing values were handled using Excel formulas in the staging table. Blank City field were replaced with "Unknown", Channel fields were replaced with "Unspecified" while missing Salesperson values were replaced with "Unassigned". This ensured no records were excluded from analysis while preserving transparency of data quality issues.
 
 ### Flagging and correcting suspicious values
-- UnitPrice (negative prices) - All negative prices were converted to their absolute values (-30.66 converted to 30.66)
+- UnitPrice (negative prices) - All negative prices were converted to their absolute values (-30.66 converted to 30.66) using the `=ABS()` formula
 - Discounts (>30%) - Discount percentages exceeding 30% were capped at 30% using Excel formulas. `=IF(P4>0.3, 0.3, P4)`
 
 ### Date validation
