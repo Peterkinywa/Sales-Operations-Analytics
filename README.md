@@ -47,6 +47,11 @@ RequiredDate values earlier than OrderDate were identified as data errors. To co
 
 <img width="1913" height="1193" alt="image" src="https://github.com/user-attachments/assets/1cd5bb21-3e24-4800-baa1-3752787bc757" />
 
+## Author
+Peter Kinywa Mutua, Data Analyst
 
+## License
 
+This repository and its contents are intended for **internal analysis, learning and reference purposes only**, unless otherwise explicitly stated.
 
+![License](https://img.shields.io/badge/License-Internal-orange)
