@@ -17,10 +17,10 @@ Missing values were handled using Excel formulas in the staging table. Blank Cit
 
 ### Flagging and correcting suspicious values
 - UnitPrice (negative prices) - All negative prices were converted to their absolute values (-30.66 converted to 30.66) using the `=ABS()` formula
-- Discounts (>30%) - Discount percentages exceeding 30% were capped at 30% using Excel formulas. `=IF(P4>0.3, 0.3, P4)`
+- Discounts (>30%) - Discount percentages exceeding 30% were capped at 30% using Excel formulas. `=IF(DiscountPct>0.3, 0.3, DiscountPct)`
 
 ### Date validation
-Rule: RequiredDate ≥ OrderDate. If RequiredDate < OrderDate, it was reset to OrderDate + 7 days.
+Rule: RequiredDate ≥ OrderDate. If RequiredDate < OrderDate, it was reset to OrderDate + 7 days using `=IF(RequiredDate<OrderDate,OrderDate+7,RequiredDat)`
 
 RequiredDate values earlier than OrderDate were identified as data errors. To correct these, RequiredDate was reset to OrderDate plus 7 days. LeadTimeDays was then computed using the corrected RequiredDate. This ensured consistency with observed operational performance.
 
