@@ -20,7 +20,7 @@ Missing values were handled using Excel formulas in the staging table. Blank Cit
 - Discounts (>30%) - Discount percentages exceeding 30% were capped at 30% using Excel formulas. `=IF(DiscountPct>0.3, 0.3, DiscountPct)`
 
 ### Date validation
-Rule: RequiredDate ≥ OrderDate. If RequiredDate < OrderDate, it was reset to OrderDate + 7 days using `=IF(RequiredDate<OrderDate,OrderDate+7,RequiredDat)`
+Rule: RequiredDate ≥ OrderDate. If RequiredDate < OrderDate, it was reset to OrderDate + 7 days using `=IF(RequiredDate<OrderDate,OrderDate+7,RequiredDate)`
 
 RequiredDate values earlier than OrderDate were identified as data errors. To correct these, RequiredDate was reset to OrderDate plus 7 days. LeadTimeDays was then computed using the corrected RequiredDate. This ensured consistency with observed operational performance.
 
@@ -39,7 +39,7 @@ RequiredDate values earlier than OrderDate were identified as data errors. To co
 
 - Quarter (e.g., Q1-2024) - `="Q"&ROUNDUP(MONTH(B2)/3,0)&"-"&YEAR(B2)`
 
-- PriceBand - `=IF(N2<=QUARTILE(N2:N632,1),"Low",IF(N2<=QUARTILE(N2:N632,2),"Middle","High"))`
+- PriceBand - `=IF(CorrectUnitPrice<=QUARTILE(CorrectUnitPriceRange,1),"Low",IF(CorrectUnitPrice<=QUARTILE(CorrectUnitPriceRange,2),"Middle","High"))`
 
 <img width="964" height="354" alt="image" src="https://github.com/user-attachments/assets/e08ace5f-b373-4807-96b0-45b596912127" />
 
