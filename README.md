@@ -41,3 +41,7 @@ RequiredDate values earlier than OrderDate were identified as data errors. To co
 
 - PriceBand - `=IF(N2<=QUARTILE(N2:N632,1),"Low",IF(N2<=QUARTILE(N2:N632,2),"Middle","High"))`
 
+<img width="964" height="354" alt="image" src="https://github.com/user-attachments/assets/e08ace5f-b373-4807-96b0-45b596912127" />
+
+
+
