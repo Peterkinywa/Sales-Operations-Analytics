@@ -43,5 +43,10 @@ RequiredDate values earlier than OrderDate were identified as data errors. To co
 
 <img width="964" height="354" alt="image" src="https://github.com/user-attachments/assets/e08ace5f-b373-4807-96b0-45b596912127" />
 
+## Dashboard
+
+<img width="1913" height="1193" alt="image" src="https://github.com/user-attachments/assets/1cd5bb21-3e24-4800-baa1-3752787bc757" />
+
+
 
 
